@@ -23,7 +23,7 @@ services:
       - db
     environment:
       RAILS_ENV: production
-      DATABASE_URL: postgres://portfolio_user:h@Rp1@78579467@db:5432/seu_portfolio_producao_db
+      DATABASE_URL: postgres://portfolio_user:h%40Rp1%4078579467@db:5432/seu_portfolio_producao_db
 
 volumes:
   postgres_data:
