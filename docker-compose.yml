@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:16
+    container_name: calculator-db
+    environment:
+      POSTGRES_USER: portfolio_user
+      POSTGRES_PASSWORD: h@Rp1@78579467
+      POSTGRES_DB: seu_portfolio_producao_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  web:
+    build: .
+    container_name: calculator-web
+    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      RAILS_ENV: production
+      DATABASE_URL: postgres://portfolio_user:h@Rp1@78579467@db:5432/seu_portfolio_producao_db
+
+volumes:
+  postgres_data:
