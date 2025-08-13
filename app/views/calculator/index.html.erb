@@ -1,52 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLT Salary Calculator</title>
-    <meta name="csrf-token" content="<%= form_authenticity_token %>">
-</head>
-<body>
-    <main>
-        <h1>Brazil CLT Salary Calculator</h1>
-        <section class="form-section">
-            <h2>Contract Data</h2>
-            <form id="calculator-form">
-                <div class="input-group">
-                    <label for="gross-salary">Gross Salary (R$):</label>
-                    <input type="number" id="gross-salary" name="gross-salary" step="0.01" required>
-                </div>
-
-                <div class="input-group">
-                    <label for="dependents">Number of Dependents:</label>
-                    <input type="number" id="dependents" name="dependents" min="0" value="">
-                </div>
-
-                <div class="input-group">
-                    <label for="transportation-voucher">Transportation Voucher (R$):</label>
-                    <input type="number" id="transportation-voucher" name="transportation-voucher" step="0.01" value="">
-                </div>
-
-                <button type="submit">Calculate</button>
-            </form>
-        </section>
-
-        <section class="result-section">
-            <h2>Calculation Summary</h2>
-            <div id="results" class="results-display" style="display: none;">
-                <div class="result-item">
-                    <span>INSS:</span> <span id="inss-result">R$ 0.00</span>
-                </div>
-                <div class="result-item">
-                    <span>IRRF:</span> <span id="irrf-result">R$ 0.00</span>
-                </div>
-                <div class="result-item total">
-                    <span>Net Salary:</span> <span id="net-salary-result">R$ 0.00</span>
-                </div>
+<main>
+    <h1>Brazil CLT Salary Calculator</h1>
+    <section class="form-section">
+        <h2>Contract Data</h2>
+        <form id="calculator-form">
+            <div class="input-group">
+                <label for="gross-salary">Gross Salary (R$):</label>
+                <input type="number" id="gross-salary" name="gross-salary" step="0.01" required>
             </div>
-        </section>
-    </main>
 
-    <%= javascript_importmap_tags %>
-</body>
-</html>
+            <div class="input-group">
+                <label for="dependents">Number of Dependents:</label>
+                <input type="number" id="dependents" name="dependents" min="0" value="">
+            </div>
+
+            <div class="input-group">
+                <label for="transportation-voucher">Transportation Voucher (R$):</label>
+                <input type="number" id="transportation-voucher" name="transportation-voucher" step="0.01" value="">
+            </div>
+
+            <button type="submit">Calculate</button>
+        </form>
+    </section>
+
+    <section class="result-section">
+        <h2>Calculation Summary</h2>
+        <div id="results" class="results-display" style="display: none;">
+            <div class="result-item">
+                <span>INSS:</span> <span id="inss-result">R$ 0.00</span>
+            </div>
+            <div class="result-item">
+                <span>IRRF:</span> <span id="irrf-result">R$ 0.00</span>
+            </div>
+            <div class="result-item total">
+                <span>Net Salary:</span> <span id="net-salary-result">R$ 0.00</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        © 2025 CLT Salary Calculator - Livan Passos
+    </div>
+
+    <div class="footer-buttons">
+        <a href="https://www.linkedin.com/in/livanpassos" target="_blank" class="linkedin-button">Linkedin</a>
+        <a href="https://github.com/livansena/calculator-clt" target="_blank" class="github-button">Github</a>
+    </div>
+</main>
