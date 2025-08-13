@@ -4,3 +4,36 @@
  *= require_self
 */
 @import "calculator";
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaço entre os botões */
+    margin-top: 30px;
+}
+
+.linkedin-button, .github-button {
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.linkedin-button {
+    background-color: #0A66C2;
+}
+
+.linkedin-button:hover {
+    background-color: #004182;
+}
+
+.github-button {
+    background-color: #24292E;
+}
+
+.github-button:hover {
+    background-color: #000000;
+}

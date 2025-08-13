@@ -15,7 +15,7 @@ RUN apt-get update -qq && \
 WORKDIR /app
 
 # Copiar os arquivos Gemfile e Gemfile.lock
-COPY Gemfile Gemfile.lock ./
+COPY Gemfile ./
 
 # Instalar as gems
 RUN bundle install
