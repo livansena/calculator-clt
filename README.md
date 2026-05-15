@@ -44,3 +44,13 @@ cd calculator-clt
 bundle install
 
 rails server
+```
+
+---
+
+## 👨‍💻 Author
+
+Livan Passos
+
+- LinkedIn: https://linkedin.com/in/livanpassos
+- Portfolio: https://livanpassos.com
