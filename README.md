@@ -8,7 +8,7 @@ This project calculates salary discounts, INSS and estimated net salary using a 
 
 ## 🌐 Live Website
 
-https://livanpassos.com/projetos/calculatorclt
+[https://livanpassos.com/projetos/calculatorclt](https://calculadora-clt.livanpassos.com/?gross-salary=5000&dependents=2&transportation-voucher=152)
 
 ---
 
