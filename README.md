@@ -1,24 +1,46 @@
-# README
+# 💰 Calculator CLT
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Brazilian CLT salary calculator developed with Ruby on Rails.
 
-Things you may want to cover:
+This project calculates salary discounts, INSS and estimated net salary using a clean and responsive interface.
 
-* Ruby version
+---
 
-* System dependencies
+## 🌐 Live Website
 
-* Configuration
+https://livanpassos.com/projetos/calculatorclt
 
-* Database creation
+---
 
-* Database initialization
+## 🛠 Technologies Used
 
-* How to run the test suite
+- Ruby on Rails
+- HTML5
+- CSS3
+- JavaScript
+- PostgreSQL
+- Docker
+- Linux
 
-* Services (job queues, cache servers, search engines, etc.)
+---
 
-* Deployment instructions
+## ✨ Features
 
-* ...
+- CLT salary calculation
+- INSS discount calculation
+- Responsive design
+- Modern interface
+- Backend structure with Rails
+
+---
+
+## 🚀 Running Locally
+
+```bash
+git clone https://github.com/livansena/calculator-clt.git
+
+cd calculator-clt
+
+bundle install
+
+rails server
