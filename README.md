@@ -48,7 +48,7 @@ rails server
 
 ---
 
-## 👨‍💻 Author
+## 🧑‍💻 Author
 
 Livan Passos
 
